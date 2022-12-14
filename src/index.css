@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	margin: 0;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+	width: 100%;
+	background-color:rgb(74, 175, 143);
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 1rem;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user img {
+	width: 200px;
+	margin: 0.4rem 0;
+}
+.user h2 {
+	margin-bottom: 1rem;
+}
+.user a {
+	width: 100%;
+}
+.user button {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	background-color: rgb(74, 175, 143);
+	color: rgb(241, 217, 217);
+	border: none;
+	margin: 0.25rem 0;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.ListUser {
+	display: grid;
+	place-content: center;
+	padding: 0 8rem;
+	grid-template-columns: repeat(4, minmax(300px, 1fr));
+	gap: 1rem;
+}
+
+.detailUser {
+	text-align: center;
+	padding: 1rem;
+	border-radius: 1rem;
+	box-shadow: 0px 5px 20px rgba(25, 25, 25, 0.1);
+}
+.detailUser h3 {
+text-align: center;
+margin: 1rem;
+}
+.detailUser img {
+	border-radius: 1rem;
+	border: 4px solid rgb(15, 15, 15);
+}
+.details {
+	display: grid;
+	place-content: center;
+}
+
+.ListProduits {
+	display: grid;
+	place-content: center;
+	padding: 0 3rem;
+
+}
+.ListProduits .produits {
+	border-radius: 1rem;
+	padding: 1rem;
+	box-shadow: 0px 5px 20px rgba(43, 42, 42, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	position: relative;
+}
+.ListProduits .produits h2 {
+	color: rgb(17, 17, 17);
+	margin-bottom: 1rem;
+}
+.ListProduits .produits h2::before {
+	content: "";
+	position: absolute;
+	border-radius: 1rem 1rem 0 0;
+	background-color: rgb(238, 246, 243);
+	color: #000;
+	width: 100%;
+	inset: 0;
+	z-index: -1;
+	height: 3.5rem;
+}
+.ListProduits .produits > span {
+	font-weight: 700;
+}
